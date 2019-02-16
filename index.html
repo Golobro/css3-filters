@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Gologa Virobo">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <title>CSS Filters</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Hover over images to see effects
+            <span>
+                <a href="https://github.com/Golobro" target="_blank">
+                    By Golobro <i class="fab fa-github fa-1x"></i> 
+                </a>
+            </span>
+        </h1>
+    </header>
+    <div class="main-wrap">
+        <main>
+            <!-- imgWrap 1 -->
+            <div class="img-wrap">
+                <h4>Greyscale</h4>
+                <img src="img/img-1.jpg" class="greyscale" alt="">
+            </div>
+            <!-- imgWrap 2 -->
+            <div class="img-wrap">
+                <h4>Sepia</h4>
+                <img src="img/img-2.jpg" class="sepia" alt="">
+            </div>
+            <!-- imgWrap 3 -->
+            <div class="img-wrap">
+                <h4>Blur</h4>
+                <img src="img/img-3.jpg" class="blur" alt="">
+                <input type="range" value="0" min="0" max="5">
+            </div>
+            <!-- imgWrap 4 -->
+            <div class="img-wrap">
+                <h4>Invert</h4>
+                <img src="img/img-4.jpg" class="invert" alt="">
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

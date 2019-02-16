@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root{
+    --center: auto;
+    --transit: -webkit-filter 0.2s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #eeeeee;
+    position: relative;
+}
+
+header{
+    background: #aaaaaa;
+    height: 40px;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 8px 0;
+    text-transform: uppercase;
+}
+
+header a{
+    text-decoration: none;
+    color: #f8e668;
+    transition: color 0.2s ease;
+}
+
+header a:hover{
+    color: #ffd900;
+}
+
+
+/* ====== MAIN WRAP ====== */
+.main-wrap{
+    max-width: 900px;
+    margin: var(--center);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; 
+    margin-top: 6px;
+}
+
+/* ====== IMAGE WRAP ====== */
+.img-wrap h4{
+    color: #ffffff;
+    text-shadow: 0 1px 6px #333333;
+    margin-bottom: 10px;
+    background: #ec9a1f;
+    padding: 2px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.img-wrap img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #656565;
+}
+
+/* greyscale */
+.greyscale{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transition: var(--transit);
+    cursor: pointer;
+}
+
+.greyscale:hover{
+    -webkit-filter: grayscale(1%);
+    filter: grayscale(1);
+}
+
+/* sepia */
+.sepia{
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+    transition: var(--transit);
+    cursor: pointer;
+}
+
+.sepia:hover{
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
+
+/* blur */
+.blur{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    transition: var(--transit);
+    cursor: pointer;
+}
+
+/* invert */
+.invert{
+    -webkit-filter: invert(0);
+    filter: invert(0);
+    transition: var(--transit);
+    cursor: pointer;
+}
+
+.invert:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media (max-width: 700px){
+    main{
+        padding: 0 .6rem .6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } header{
+        height: 50px;
+    } h1{
+        font-size: 1.4rem;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 500px){
+    header{
+        height: 60px;
+    } h1{
+        font-size: 1.1rem;
+        padding: 12px 0;
+    } main{
+        padding: 0 .6rem .6rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } 
+}
