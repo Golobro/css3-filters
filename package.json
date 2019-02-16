@@ -1,0 +1,16 @@
+{
+  "name": "css-image-filters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Gologa Virobo",
+  "license": "ISC",
+  "homepage": "https://github.com.github.io/css3-filters",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
